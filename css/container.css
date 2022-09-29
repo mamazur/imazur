@@ -1,0 +1,129 @@
+/*SHARED*/
+.container {
+    margin: auto;
+    background: var(--white);
+}
+
+.container__title {
+    width: 10%;
+    padding: 2.5rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+}
+
+.container__space {
+
+    padding: 3rem;
+    width: 30%;
+}
+
+.container__space>img {
+    height: 200px;
+    width: 200px;
+}
+
+.container__text {
+    padding: 2rem;
+    width: 70%;
+}
+
+/*CONTAINER PROJECT*/
+.container__project {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 2rem;
+}
+
+/*CONTAINER CERTIFICATE*/
+
+.container__certificate {
+    padding: 2rem;
+    margin: 2rem 2rem 2rem 0;
+    background: var(--primary);
+}
+
+/*CONTAINER HOBBIES*/
+.container__hobbies,
+.container__bio,
+.container__cv,
+.container__certificates,
+.container__projects {
+    display: flex;
+    position: relative;
+}
+
+.container__cv-item {
+    padding-top: 2rem;
+
+}
+
+
+
+/*CONTAINER KNOWLEDGE*/
+.container__knowledge {
+    background: var(--primary);
+    padding: 3.5rem;
+}
+
+.container__knowledge-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__knowledge-labels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.container__knowledge-label {
+    color: var(--primary-variant);
+    padding: 7px;
+    margin: 10px;
+    background: #494949;
+    border-radius: 4.66652px;
+}
+
+.container__impressum {
+    padding: 2rem;
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: calc(100%);
+        margin: auto;
+    }
+
+    .container__hobbies,
+    .container__bio,
+    .container__cv,
+    .container__projects,
+    .container__certificates,
+    .container__knowledge,
+    .container__knowledge-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__certificate {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .container__certificate>img {
+        width: calc(100%);
+    }
+
+    .container__space,
+    .container__text {
+        width: 100%;
+    }
+
+    .container__knowledge-labels {
+        width: 100%;
+    }
+
+}

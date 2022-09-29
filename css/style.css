@@ -1,0 +1,158 @@
+:root {
+    --primary: #C7D0D9;
+    --primary-variant: #F4F7FA;
+    --secondary: #3C3D3E;
+    --background: #f6f7ff;
+    --text: #0B0C0E;
+    --background-black: #0B0C0E;
+    --warning: #FDA445;
+    --white: #ffffff
+}
+
+
+/* general settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: auto;
+    max-width: 1120px;
+    background: var(--background);
+    color: var(--text);
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    letter-spacing: -0.015em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.8rem;
+    line-height: 150%;
+    letter-spacing: -0.015em;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.03125rem;
+    line-height: 140%;
+}
+
+.text-small {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 160%;
+}
+
+.label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: -0.015em;
+}
+
+.label-cv {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    background: var(--primary);
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 1rem;
+    letter-spacing: -0.015em;
+}
+
+button,
+.button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 1.25px;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 16px 48px;
+    gap: 10px;
+    background: var(--primary-variant);
+    border: 1px solid var(--primary-variant);
+    border-radius: 170px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--surface-color);
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        max-width: 100%;
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .title {
+        font-size: 3.3rem;
+        line-height: 110%;
+    }
+}
