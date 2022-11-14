@@ -1,0 +1,40 @@
+/* Image modal */
+img.has-modal {
+    cursor: pointer;
+}
+
+img.has-modal:hover {
+    border: 1px solid #017afe;
+    border-radius: 16px;
+}
+
+#myModal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 99999;
+}
+
+#myModal>.icon-button {
+    right: calc(5vw);
+    top: 8px;
+}
+
+.icon-button>img {
+
+    width: 2rem;
+}
+
+#myModal>.full-padding {
+    max-height: calc(90vh);
+    margin-top: 10rem;
+    border-radius: 16px;
+}
+
+#myModal.closed {
+    display: none;
+}

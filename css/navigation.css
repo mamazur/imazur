@@ -100,6 +100,11 @@ nav .mobile-menu-icon {
         display: flex;
     }
 
+    .header {
+        padding: 1rem;
+
+    }
+
     nav {
         padding: 0 1rem;
     }

@@ -1,0 +1,94 @@
+<html lang="de">
+<!--https://mamazur.github.io/imazur.hp/-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irena Mazur - Portfolio</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="header" id="header">
+        <div class="menu">
+            <div class="void"> </div>
+            <span id="topNav" class="nav-closed">
+                <a href="./index.html"> Bio</a>
+                <a href="./index.html#projekte"> Projekte</a>
+                <a href="./cv.html">CV</a>
+            </span>
+            <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+                <span id="topNavMobileToggle" class="material-icons"><img id="menuImg" src="img/style/menu.svg"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="title" id="title">Design Engineer — — </div>
+    <div class="container">
+
+
+        <div class="container__blender">
+
+            <div class="container__space">
+            </div>
+            <div class="container__text">
+                <div class="container__works">
+                    <div>
+                        <h2>Blender Modeling & Rendering</h2>
+                        <div class="text-small">Ich habe an einer Weiterbildung beim Future Training and Consulting
+                            GmbH,
+                            Berlin teilgenommen und neue Fähigkeiten in den Bereichen 3D-Modellierung und Schattierung,
+                            Beleuchtung und Rendering gelernt.</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container__blender_works">
+            <div class="container__certificate">
+                <img src="./img/Armchair.jpeg" onclick="toggleModal(this)" class="has-modal">
+
+            </div>
+            <div class="container__certificate">
+                <img src="./img/Bag.jpeg" onclick="toggleModal(this)" class="has-modal">
+            </div>
+            <div class="container__certificate">
+                <img src="./img/Cap of coffee.jpeg" onclick="toggleModal(this)" class="has-modal">
+            </div>
+            <div class="container__certificate">
+                <img src="./img/Chair.jpeg" onclick="toggleModal(this)" class="has-modal">
+            </div>
+            <div class="container__certificate">
+                <img src="./img/Sportbag.jpeg" onclick="toggleModal(this)" class="has-modal">
+            </div>
+        </div>
+
+    </div>
+    <div id="myModal" class="closed">
+
+        <span class="icon-button">
+            <img src="./img/style/close.svg" onclick="toggleModal()"></img>
+        </span>
+        <img src="" alt="" class="full-padding" />
+    </div>
+    <footer>
+        <div class="footer__left">
+            Gebaut mit 💖 von Maria Mazur - 2022
+        </div>
+        <div class="footer__right">
+            <div class="impressum">
+                <a href="./impressum.html"> Impressum & Datenschutz</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -10,7 +10,9 @@
     <link href="css/navigation.css" rel="stylesheet">
     <link href="css/container.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <script type="text/javascript" src="js/main.js"></script>
+    <link rel="icon" type="image/ico" href="favicon.ico">
 </head>
 
 <body>
@@ -33,27 +35,42 @@
             <div class="container__text label">
                 Hallo, ich heiße Irena
                 <br>
-                Engineurin | Konzepterin | Hobbykünstlering | Katzenmutter | Fitnessbegeistert
+                Ingenieurin | Konzepterin | Hobbykünstlerin | Katzenmutter | Fitnessbegeisterte
             </div>
         </div>
         <div class="container__bio">
             <div class="container__title label">
-                Bio
+
             </div>
             <div class="container__space">
                 <img src="./img/me.svg">
             </div>
             <div class="container__text">
                 <p>
-                    Ich wohne zusammen mit meinem Mann und dem Kater in der Nähe von Frankfurt. Ich habe meinen
-                    langjährigen Traum erfüllt und mache zur Zeit lerne Modeling und Rendering mit Blender als Teil
-                    einer Weiterbildung.
+                    Hallo,
+                    ich bin Irena,
+                    eine Spezialistin für Design und Konstruktion.
+                    Ich wohne mit meinem Mann und meinem Kater in der Nähe von Frankfurt am
+                    Main.
+                    Ich bin immer auf der Suche nach neuen Herausforderungen
+                    und freue mich auf neue und spannende Aufgaben.
+
                 </p>
                 <p>
-                    Die letzen Jahre habe ich als Desingengineurin im Bereich Maschienenbau gearbeit und Erfahrungen in
-                    Bereich 3D und 2D Konzeptentwicklung und Konstruktion gesammelt. Da ich eine große Affinität zur
-                    Kunst habe - finde ich sehr spannend die analytische und deterministische Welt der Maschienenbau mit
-                    der gestalterischen Freiheit, die Blender einem bietet zur verbinden.
+                    Ich habe langjährige praktische Erfahrungen
+                    in 2D- und 3D-Konzeptentwicklung und Konstruktion
+                    in den CAD-Systemen NX und Catia.
+                    Ausserdem liebe ich Kunst und Design
+                    und arbeite nebenberuflich als Web-Designerin.
+                    Ich habe mir einen langjährigen Traum erfüllt
+                    und eine Weiterbildung
+                    in Modeling und Rendering mit Blender
+                    gemacht.
+                    Die gestalterischen Freiheiten von Blender
+                    erlauben es mir,
+                    meine Begeisterung für 3D-Modellierung und Design in die Praxis umzusetzen.
+
+
                 </p>
             </div>
         </div>
@@ -72,39 +89,19 @@
                             Berlin teilgenommen und neue Fähigkeiten in den Bereichen 3D-Modellierung und Schattierung,
                             Beleuchtung und Rendering gelernt.</div>
                     </div>
-                    <img src="./img/style/forward.svg">
-                </div>
-                <div class="container__project">
-                    <div>
-                        <h2>3D & 2D Konzeptentwicklung</h2>
-                        <div class="text-small">Tätigkeit als Senior Design Engineer bei Nemak Innovative Lightweighting
-                        </div>
-                    </div>
+                    <a href="./blender.html"> <img src="./img/style/forward.svg"></a>
 
-                    <img src="./img/style/forward.svg">
                 </div>
-                <div class="container__project">
-                    <div>
-                        <h2>CAD Konstruktion</h2>
-                        <div class="text-small">3D–Konstruktion und 2D–Zeichnungserstellung von Komponenten aus dem
-                            Fachbereich Chassis und Thermal HVAG:
-                            <br>
-                            • OPEL Astra–Vorderachse /McPherson/ <br>
-                            • OPEL Vectra–Hinterachse /4–Link, H–Arm/ <br>
-                            • OPEL Corsa–Handbremse–Cables–Konsole
-                        </div>
-                    </div>
 
-                    <img src="./img/style/forward.svg">
-                </div>
             </div>
         </div>
         <div class="container__certificates">
             <div class="container__certificate">
-                <img src="./img/Zert_Modeling_crop.jpeg" alt="">
+                <img src="./img/Zert_Modeling_crop.jpeg" onclick="toggleModal(this)" class="has-modal">
+
             </div>
             <div class="container__certificate">
-                <img src="./img/Zert_Schading_crop.jpeg" alt="">
+                <img src="./img/Zert_Schading_crop.jpeg" onclick="toggleModal(this)" class="has-modal">
             </div>
         </div>
         <div class="container__knowledge">
@@ -112,7 +109,13 @@
             <div class="container__knowledge-text">
                 <div class="container__knowledge-labels">
                     <div class="container__knowledge-label">
-                        Blender 3.1
+                        Blender 3.2
+                    </div>
+                    <div class="container__knowledge-label">
+                        Photoshop
+                    </div>
+                    <div class="container__knowledge-label">
+                        Inkscape
                     </div>
                     <div class="container__knowledge-label">
                         Unigraphics NX 5
@@ -128,6 +131,9 @@
                     </div>
                     <div class="container__knowledge-label">
                         VisMockup
+                    </div>
+                    <div class="container__knowledge-label">
+                        Share Point
                     </div>
                 </div>
 
@@ -150,6 +156,13 @@
                         src="./img/style/arrow-forward.svg"></a>
             </p>
         </div>
+    </div>
+    <div id="myModal" class="closed">
+
+        <span class="icon-button">
+            <img src="./img/style/close.svg" onclick="toggleModal()"></img>
+        </span>
+        <img src="" alt="" class="full-padding" />
     </div>
     <footer>
         <div class="footer__left">
