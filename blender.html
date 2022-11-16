@@ -21,62 +21,134 @@
             <div class="void"> </div>
             <span id="topNav" class="nav-closed">
                 <a href="./index.html"> Bio</a>
-                <a href="./index.html#projekte"> Projekte</a>
+                <a href="./blender.html"> Projekte</a>
                 <a href="./cv.html">CV</a>
+                <a href="./hobby.html">Hobby</a>
             </span>
             <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
                 <span id="topNavMobileToggle" class="material-icons"><img id="menuImg" src="img/style/menu.svg"></span>
             </a>
         </div>
     </nav>
-    <div class="title" id="title">Design Engineer — — </div>
+    <div class="title" id="title">Blender — — </div>
     <div class="container">
-
-
-        <div class="container__blender">
-
-            <div class="container__space">
-            </div>
-            <div class="container__text">
-                <div class="container__works">
-                    <div>
-                        <h2>Blender Modeling & Rendering</h2>
-                        <div class="text-small">Ich habe an einer Weiterbildung beim Future Training and Consulting
-                            GmbH,
-                            Berlin teilgenommen und neue Fähigkeiten in den Bereichen 3D-Modellierung und Schattierung,
-                            Beleuchtung und Rendering gelernt.</div>
-                    </div>
-
-                </div>
+        <div class="container__bio">
+            <div class="container__text label">
+                Blender ist eine Open-Source-Suite zur 3D-Erstellung, die für die
+                Modellierung, Animation, Videobearbeitung und vieles mehr eingesetzt wird.
+                <br>
+                Ich habe an einer Weiterbildung beim Future Training and Consulting GmbH, Berlin teilgenommen. Das sind
+                Beispiele meiner Arbeit.
 
             </div>
         </div>
         <div class="container__blender_works">
-            <div class="container__certificate">
-                <img src="./img/Armchair.jpeg" onclick="toggleModal(this)" class="has-modal">
 
-            </div>
-            <div class="container__certificate">
-                <img src="./img/Bag.jpeg" onclick="toggleModal(this)" class="has-modal">
-            </div>
-            <div class="container__certificate">
-                <img src="./img/Cap of coffee.jpeg" onclick="toggleModal(this)" class="has-modal">
-            </div>
-            <div class="container__certificate">
-                <img src="./img/Chair.jpeg" onclick="toggleModal(this)" class="has-modal">
-            </div>
-            <div class="container__certificate">
-                <img src="./img/Sportbag.jpeg" onclick="toggleModal(this)" class="has-modal">
-            </div>
+
+
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Technik</label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Möbel & Co. </label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Innendesign </label>
+
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Porzellan & Co.</label>
+
+            <section id="content1">
+                <div class="container__blender_work">
+                    <img src="./img/01_Airplane.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>Als Ingeneurin liebe ich die Weil der Technik - von Spielzeug bis zur modernen technischen
+                        Produkten</p>
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/02_Helicopter.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>Gelicopter BELL 429</p>
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/03_Windcopter.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>Drohne mit Kamera</p>
+                </div>
+            </section>
+
+            <section id="content2">
+                <div class="container__blender_work">
+                    <img src="./img/07_Bag.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <img src="./img/08_Sportbag.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>Die Modelle der Taschen wurden für die Kolloboration mit dem Unternehmen <a
+                            href="https://grodex.co/">Grodex</a> entworfen
+                    </p>
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/05_Armchair.jpg" onclick="toggleModal(this)" class="has-modal">
+
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/06_Chair.jpg" onclick="toggleModal(this)" class="has-modal">
+                </div>
+
+
+            </section>
+
+            <section id="content3">
+                <div class="container__blender_work">
+                    <img src="./img/01_Office.jpg" onclick="toggleModal(this)" class="has-modal">
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/02_Office.jpg" onclick="toggleModal(this)" class="has-modal">
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/03_Office.jpg" onclick="toggleModal(this)" class="has-modal">
+                </div>
+            </section>
+
+            <section id="content4">
+                <div class="container__blender_work">
+                    <img src="./img/11_Vase with flowers.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>
+                        In Version 2.92 führte Blender einen knotenbasierten Arbeitsablauf zum Konstruieren und
+                        Manipulieren von Geometrie ein, daher der Name „Geometrieknoten“ - Geometry Node. Es handelt
+                        sich dabei um einen rein
+                        prozeduralen Workflow.
+                        <br>
+                        <br>
+                        Angefertigt ausschließlich nur mit Nutzung von Geometry Node Editor
+                    </p>
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/10_Vase blu.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <img src="./img/12_Vase_CERAMIC.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p>Angefertigt ausschließlich nur mit Nutzung von Modifier. Beispiele für die Verwendung von
+                        Shader
+                        Editor und mehreren proceduralen Texturen</p>
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/13_Teapot.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <p> Beispiel der Nutzung von Procedural Gold Material. Als Textur verwende ich ein Foto meines
+                        Gemäldes</p>
+
+                </div>
+                <div class="container__blender_work">
+                    <img src="./img/15_Toothpaste.jpg" onclick="toggleModal(this)" class="has-modal">
+                    <img src="./img/14_Detergent bottle.jpg" onclick="toggleModal(this)" class="has-modal">
+
+                </div>
+            </section>
+
         </div>
 
     </div>
     <div id="myModal" class="closed">
 
+        <img src="" alt="" class="full-padding" />
         <span class="icon-button">
             <img src="./img/style/close.svg" onclick="toggleModal()"></img>
         </span>
-        <img src="" alt="" class="full-padding" />
+
+
     </div>
     <footer>
         <div class="footer__left">

@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: auto !important;
+  max-width: 1120px;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  background: var(--white);
+}
+
+.header {
+  background: #3C3D3E !important;
+  color: whitesmoke;
+}
+
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+  margin: 0 .5rem;
+}
+
+.wrapper {
+  position: relative;
+  padding: 2vw;
+}
+
+.wrapper:nth-child(even) {
+  background-color: #fca311;
+}
+
+.wrapper:nth-child(odd) {
+  background-color: #a1a3a5;
+}
+
+#id1 {
+  background: url(../img/style/circles.svg) no-repeat #3C3D3E;
+}
+
+#id4 {
+  background: url(../img/style/circles2.svg) no-repeat #fca311;
+}
+
+
+p i {
+  font-size: 5vw;
+}
+
+.title {
+  width: 50%;
+}
+
+/*IMAGES*/
+
+.slideshow {
+  display: flex;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quote {
+  width: 30%;
+}
+
+.images img,
+.image-round img {
+  height: 25vw;
+  width: 25vw;
+  margin: 3vw;
+  border-radius: 50%;
+  border: solid white 10px;
+}
+
+.images img:hover {
+  animation: pulse 4s infinite alternate;
+}
+
+.border {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+}
+
+.border-down {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+}
+
+.links {
+  margin: auto;
+  margin: 2em;
+  margin-bottom: 4em;
+  line-height: 2em;
+}
+
+.links img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.images {
+  width: 70%;
+}
+
+.me {
+  animation: fadeInDown 3s;
+  margin-bottom: 8vw;
+}
+
+.name {
+  color: whitesmoke;
+  position: absolute;
+  margin: -15px;
+  font-size: 2vw;
+  top: 50%;
+  left: 90%;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+}
+
+@media screen and (max-width: 900px) {
+  .images {
+    width: 100%;
+  }
+
+  .images img {
+    height: 50vw;
+    width: 50vw;
+    margin: 3vw;
+    border: solid white 5px;
+  }
+
+  #id1 .slideshow {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .slideshow {
+    display: inline;
+  }
+
+  .quote {
+    width: 100%;
+  }
+}

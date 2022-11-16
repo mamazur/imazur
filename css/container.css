@@ -34,7 +34,7 @@
 .container__project {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary-variant);
     padding-bottom: 2rem;
 }
 
@@ -59,13 +59,21 @@
 
 .container__cv-item {
     padding-top: 2rem;
-
 }
 
 /*CONTAINER KNOWLEDGE*/
 .container__knowledge {
     background: var(--primary);
     padding: 3.5rem;
+}
+
+.container__hobbies {
+    padding: 3.5rem;
+}
+
+.container__hobbies__text {
+    padding: 0 2rem;
+
 }
 
 .container__knowledge-text {
@@ -87,9 +95,23 @@
     border-radius: 4.66652px;
 }
 
+/*IMPRESSUM*/
 .container__impressum {
     padding: 2rem;
 }
+
+.container__blender_works {
+    padding: 2rem 0;
+}
+
+.container__blender_work {
+    display: flex;
+    padding: 2rem;
+    margin: 2rem;
+    background: var(--primary);
+    border-radius: 16px;
+}
+
 
 @media (max-width: 576px) {
     .container {
@@ -99,6 +121,8 @@
 
     .container__hobbies,
     .container__bio,
+    .container__blender_works,
+    .container__blender_work,
     .container__cv,
     .container__projects,
     .container__certificates,
@@ -110,10 +134,6 @@
 
     .container__certificate {
         margin: 2rem 0 2rem 0;
-    }
-
-    .container__certificate>img {
-        width: calc(100%);
     }
 
     .container__space,
@@ -129,6 +149,4 @@
     .container__space {
         display: none;
     }
-
-
 }

@@ -1,0 +1,35 @@
+.blue-background {
+  background-color: #5353b6f8 !important;
+}
+
+.coral-background {
+  background-color: #f85c23 !important;
+}
+
+.dark-background {
+  background-color: #a1a3a5 !important;
+}
+
+.white-background {
+  background-color: #ffffff !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-middle {
+  font-size: 3vw;
+}
+
+.text-big {
+  font-size: 7vw;
+}
+
+.text-white {
+  color: white;
+}
+
+.dark-border {
+  border: solid black 10px;
+}

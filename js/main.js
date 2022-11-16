@@ -18,8 +18,8 @@ function toggleModal(img) {
     if (modal.classList.contains('closed')) {
         modal.classList.remove('closed')
         modal.scrollTo(0, 0)
-        modal.children.item(1).src = img.src
-        modal.children.item(1).alt = img.alt
+        modal.children.item(0).src = img.src
+        modal.children.item(0).alt = img.alt
     } else {
         modal.classList.add('closed')
     }

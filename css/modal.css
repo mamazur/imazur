@@ -1,6 +1,19 @@
 /* Image modal */
 img.has-modal {
     cursor: pointer;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    max-height: calc(40vh);
+    margin-right: 2rem;
+}
+
+
+
+@media (max-width: 576px) {
+    img.has-modal {
+        max-height: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
 img.has-modal:hover {
@@ -19,22 +32,61 @@ img.has-modal:hover {
     z-index: 99999;
 }
 
-#myModal>.icon-button {
-    right: calc(5vw);
-    top: 8px;
+#myModal .icon-button {
+    position: absolute;
+    top: 20px;
 }
 
 .icon-button>img {
-
-    width: 2rem;
+    width: 3rem;
 }
 
 #myModal>.full-padding {
-    max-height: calc(90vh);
-    margin-top: 10rem;
+    max-height: calc(80vh);
+    margin-top: calc(10vh);
     border-radius: 16px;
 }
 
 #myModal.closed {
     display: none;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+    border-radius: 16px 16px 0 0;
+}
+
+label:hover {
+    color: var(--secondary-variant);
+    cursor: pointer;
+}
+
+input:checked+label {
+    color: var(--secondary);
+    border: 1px solid #ddd;
+    border-top: 2px solid #017afe;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
+    display: block;
 }
