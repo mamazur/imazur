@@ -51,6 +51,20 @@ img.has-modal:hover {
     display: none;
 }
 
+@media (max-width: 576px) {
+    #myModal>img {
+        width: 100%;
+    }
+
+    #myModal>.icon-button {
+        position: relative;
+    }
+}
+
+
+
+/*Tabs*/
+
 section {
     display: none;
     padding: 20px 0 0;
