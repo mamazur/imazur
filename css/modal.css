@@ -3,7 +3,7 @@ img.has-modal {
     cursor: pointer;
     border: 1px solid var(--primary);
     border-radius: 16px;
-    max-height: calc(40vh);
+    max-height: 250px;
     margin-right: 2rem;
 }
 
@@ -101,6 +101,7 @@ input:checked+label {
 #tab1:checked~#content1,
 #tab2:checked~#content2,
 #tab3:checked~#content3,
-#tab4:checked~#content4 {
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
     display: block;
 }

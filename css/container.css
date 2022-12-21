@@ -41,10 +41,14 @@
 /*CONTAINER CERTIFICATE*/
 
 .container__certificate {
-    padding: 2rem;
-    margin: 2rem 2rem 2rem 0;
-    background: var(--primary);
+    margin: 1.5rem;
     border-radius: 16px;
+}
+
+.container__certificate>img {
+    height: 450px;
+    border-radius: 16px;
+    border: 1px solid var(--primary);
 }
 
 /*CONTAINER HOBBIES*/
@@ -55,6 +59,10 @@
 .container__projects {
     display: flex;
     position: relative;
+}
+
+.container__certificates {
+    justify-content: end;
 }
 
 .container__cv-item {
@@ -105,10 +113,10 @@
 }
 
 .container__blender_work {
-    display: flex;
+
     padding: 2rem;
     margin: 2rem;
-    background: var(--primary);
+    background: var(--primary-variant);
     border-radius: 16px;
 }
 
