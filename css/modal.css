@@ -17,7 +17,7 @@ img.has-modal {
 }
 
 img.has-modal:hover {
-    border: 1px solid #017afe;
+    border: 1px solid var(--warning);
     border-radius: 16px;
 }
 
@@ -68,7 +68,7 @@ img.has-modal:hover {
 section {
     display: none;
     padding: 20px 0 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--primary);
 }
 
 input {
@@ -81,7 +81,7 @@ label {
     padding: 15px 25px;
     font-weight: 600;
     text-align: center;
-    color: #bbb;
+    color: var(--secondary-variant);
     border: 1px solid transparent;
     border-radius: 16px 16px 0 0;
 }
@@ -93,9 +93,9 @@ label:hover {
 
 input:checked+label {
     color: var(--secondary);
-    border: 1px solid #ddd;
-    border-top: 2px solid #fe6201;
-    border-bottom: 1px solid #fff;
+    border: 1px solid var(--primary);
+    border-top: 2px solid var(--warning);
+    border-bottom: 1px solid var(--white);
 }
 
 #tab1:checked~#content1,

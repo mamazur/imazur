@@ -6,7 +6,7 @@
     --background: #f6f7ff;
     --text: #0B0C0E;
     --background-black: #0B0C0E;
-    --warning: #fca311;
+    --warning: #ee6c4d;
     --white: #ffffff
 }
 
@@ -100,7 +100,7 @@ p {
     line-height: 150%;
     background: var(--primary);
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white);
     padding-left: 1rem;
     letter-spacing: -0.015em;
 }

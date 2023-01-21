@@ -52,9 +52,7 @@
     position: relative;
 }
 
-.container__certificates {
-    justify-content: end;
-}
+
 
 .container__cv-item {
     padding-top: 2rem;
@@ -90,7 +88,7 @@
     color: var(--primary-variant);
     padding: 7px;
     margin: 10px;
-    background: #494949;
+    background: var(--secondary);
     border-radius: 4.66652px;
 }
 
