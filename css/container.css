@@ -1,17 +1,8 @@
 /*SHARED*/
 .container {
     margin: auto;
+    max-width: 1120px;
     background: var(--white);
-}
-
-.container__title {
-    width: 10%;
-    padding: 2.5rem 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform-origin: 0 0;
-    transform: rotate(270deg);
 }
 
 .container__space {
@@ -157,7 +148,6 @@
         width: 100%;
     }
 
-    .container__title,
     .container__space {
         display: none;
     }

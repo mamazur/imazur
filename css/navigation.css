@@ -5,6 +5,9 @@
 
 #title {
     padding: 1rem 3rem;
+    font-weight: 600;
+    font-size: 96px;
+    text-transform: uppercase;
     background: var(--primary);
     color: var(--primary-variant)
 }
