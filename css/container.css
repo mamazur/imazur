@@ -102,13 +102,12 @@
 }
 
 .container__blender_work {
-
+    display: flex;
     padding: 2rem;
     margin: 2rem;
     background: var(--primary-variant);
     border-radius: 12px;
 }
-
 
 @media (max-width: 576px) {
     .container {

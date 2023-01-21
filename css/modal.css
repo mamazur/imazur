@@ -4,10 +4,7 @@ img.has-modal {
     border: 1px solid var(--primary);
     border-radius: 12px;
     max-height: 250px;
-    margin-right: 2rem;
 }
-
-
 
 @media (max-width: 576px) {
     img.has-modal {
@@ -64,7 +61,6 @@ img.has-modal:hover {
 
 
 /*Tabs*/
-
 section {
     display: none;
     padding: 20px 0 0;
@@ -102,6 +98,9 @@ input:checked+label {
 #tab2:checked~#content2,
 #tab3:checked~#content3,
 #tab4:checked~#content4,
-#tab5:checked~#content5 {
+#tab5:checked~#content5,
+#tab6:checked~#content6,
+#tab7:checked~#content7,
+#tab8:checked~#content8 {
     display: block;
 }

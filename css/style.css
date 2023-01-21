@@ -6,10 +6,9 @@
     --background: #f6f7ff;
     --text: #0B0C0E;
     --background-black: #0B0C0E;
-    --warning: #ee6c4d;
+    --warning: #0081a7;
     --white: #ffffff
 }
-
 
 /* general settings */
 * {
@@ -89,6 +88,19 @@ p {
     font-weight: 700;
     font-size: 1rem;
     line-height: 150%;
+    letter-spacing: -0.015em;
+}
+
+figure {
+    margin: 1rem;
+}
+
+figcaption {
+    font-family: 'Montserrat';
+    color: var(--secondary);
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 130%;
     letter-spacing: -0.015em;
 }
 
