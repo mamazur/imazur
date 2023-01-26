@@ -6,7 +6,7 @@
 #title {
     padding: 1rem 3rem;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 6rem;
     line-height: 70px;
     text-transform: uppercase;
     color: var(--primary);
@@ -105,5 +105,8 @@ nav .mobile-menu-icon {
     .footer__right>div,
     .footer__left {
         font-size: .4rem;
+    }
+    #title {
+        font-size: 3rem;
     }
 }

@@ -52,8 +52,6 @@
     position: relative;
 }
 
-
-
 .container__cv-item {
     padding-top: 2rem;
 }
@@ -110,6 +108,10 @@
 }
 
 @media (max-width: 576px) {
+    figure>img {
+        width: 100%;
+    }
+
     .container {
         width: calc(100%);
         margin: auto;
@@ -133,14 +135,12 @@
     }
 
     .container__certificate>img {
-        width: 100%;
+        width: 90%;
+        margin: 5%;
     }
 
     .container__space,
-    .container__text {
-        width: 100%;
-    }
-
+    .container__text,
     .container__knowledge-labels {
         width: 100%;
     }
